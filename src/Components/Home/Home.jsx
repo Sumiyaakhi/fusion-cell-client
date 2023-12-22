@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaMobileScreen } from "react-icons/fa6";
-import Category from './Category/Category';
+import Category from '../Category/Category';
 
 const Home = () => {
     const backgroundImageStyle = {
@@ -23,9 +23,11 @@ const Home = () => {
             <button className="btn btn-outline mt-5 border-0 border-b-4 text-xl font-serif lg:ms-36">Shop Now</button>
             <button className="btn btn-outline mt-5 border-0 border-l-4 border-r-4 text-xl font-serif ms-8">Learn More</button>
             </div>
-            
+            <div>
+                <input className='w-56 md:w-[450px] h-8 ms-5 md:ms-20 ps-3 rounded-xl mt-5 border-0 bg-opacity-50' type="search" placeholder='search any mobile here' name="" id="" />
+            </div>
         </div>
-        <Category></Category>
+        
         </>
     );
 };
